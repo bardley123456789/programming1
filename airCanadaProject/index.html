@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Canada Recruitment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Patua+One&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="nav-center">
+          <div class="nav-header">
+            <img src="./logo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <img src="./plane.png" class="plane">
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="links">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="#information">Info</a>
+            </li>
+            <li>
+              <a href="#reviews">Employee Testimonials</a>
+            </li>
+            <li>
+              <a href="#form">Apply To Air Canada</a>
+            </li>
+          </ul>
+        
+        </div>
+      <div class="item item-2">
+        <h1 class="title" id="information">Welcome to Air Canada!</h1>
+        <p class="description">
+          Welcome to Air Canada's Recruitment page! Air Canada has been Canada's most trusted airline for many decades!
+          Here you can learn more about our hiring and our services, view our reviews, and apply if you'd like!
+        </p>
+        
+      </div>
+
+      <div class="special">
+        <h2 class="title">Current Flight</h2>
+        <p id="flight"></p>
+        <p id="time"></p>
+        <button id="switch-flight" class="custom-btn btn-large">View another flight</button>
+
+      </div>
+
+      <div class="counter">
+        <h2 class="title">like our page!</h2>
+        <span id="value">0</span>
+        <div class="button-container">
+          <button class="btn decrease custom-btn btn-med">dislike</button>
+          <button class="btn reset custom-btn btn-med">reset</button>
+          <button class="btn increase custom-btn btn-med">like</button>
+        </div>
+      </div>
+
+      <div class="colour-flipper">
+        <h2 class="title">colour scheme flipper</h2>
+        <button id="generate-btn" class="custom-btn btn-large">Change colour scheme</button>
+      </div>
+
+      <div class="item reviews">
+        <div id="reviews">
+          <h2 class="title">Employee Testimonials</h2>
+        </div>
+        <article>
+          <div class="img-container">
+            <img src="./person-1.jpeg" id="person-img" alt=""/>
+          </div>
+          <h4 id="author">Lily Lillie</h4>
+          <p id="job">Baker</p>
+          <p id="info">
+            I love this buisiness SO MUCH! I quite simply cannot wait to shop here once more, when the stars over yonder decide my fate.
+          </p>
+          <!--  prev next buttons -->
+          <div class="button-container">
+            <button class="prev-btn btn-small">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn btn-small">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!--  random button-->
+          <button class="random-btn custom-btn btn-large">Random Review</button>
+        </article>
+      </div>
+    </div>
+
+    <div class="item apply">
+      <h2 class="title">Apply for a job at Air Canada here!</h2>
+      <form id="form">
+      <div class="form-group">
+        <label id="name-label" for="name" class="title-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email" class="title-label">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-group">
+        <p>Enter your Qualifications</p>
+        <textarea id="comments" class="comment-area form-control" name="comment" placeholder="Please write here."></textarea>
+      </div>
+      <div class="form-group">
+          <button type="submit" id="submit" class="submit-button custom-btn btn-med">
+            Apply
+          </button>
+      </div>
+    </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
